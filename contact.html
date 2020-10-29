@@ -1,12 +1,36 @@
-
-<form action="mailto:haruki_shou@gmail.com" method="post" enctype="text/plain">
-    氏名<br>
-    <input type="text" size="20" name="氏名"><br>
-    <br>
-    お問い合わせ内容<br>
-    <br>
-    <textarea name="お問い合わせ内容" rows="5" cols="65"></textarea><br>
-    <br>
-    <input type="submit" value="送信"><br>
-    <input type="reset" value="クリア">
-    </form>
+アンケートにお答えください<br> 
+<form method="POST" action="/asp/mailto.asp"> 
+<input type="hidden" name="subject" value="■アンケートメール">
+<input type="hidden" name="toaddr" value="あなたのID@nas.ne.jp">
+内容はいいかがでしたか？
+<select size="1" name="item1">       
+  <option value="内容:とてもよかった">とてもよかった</option>
+  <option value="内容:まあまあだった" selected>まあまあだった</option>
+  <option value="内容:とくに良くも悪くもない">とくに良くも悪くもない</option>
+  <option value="内容:あまりよくなかった">あまりよくなかった</option>
+  <option value="内容:全くよくなかった">全くよくなかった</option>
+</select><br> 
+色使いいかがでしたか？
+<input type="radio" value="色：良い" checked name="item2">良い
+<input type="radio" name="item2" value="色：悪い">悪い<br>
+あなたの年齢       
+<select size="1" name="item3"> 
+  <option value="年齢：10代未満">10代未満</option>
+  <option value="年齢：10代">10代</option>
+  <option value="年齢：20代">20代</option>
+  <option value="年齢：30代">30代</option>
+  <option value="年齢：40代">40代</option>
+  <option value="年齢：50代">50代</option>
+  <option value="年齢：60歳以上">60歳以上</option>
+</select><br>
+あなたの性別
+<input type="radio" name="item4" value="性別：男" checked>男
+<input type="radio" name="item4" value="性別：女">女     
+<br>     
+その他気が付いたことなどを教えてください<br>       
+<textarea rows="4" name="body" cols="59"></textarea><br>     
+あなたのメールアドレスをおしえてください<br>    
+メールアドレス<input type="text" name="fromaddr" size="56"><br>     
+<input type="submit" value="このボタンを押して送信してください">      
+<input type="hidden" name="nextpage" value="https://shoyu15.github.io/test-biami/">
+</form> 
