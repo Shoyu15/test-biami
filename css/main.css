@@ -554,6 +554,15 @@ height:100% !important;/*youtube対応*/
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
+.fadeIn02 {
+    transform: translate3d(0, -10px, 0);
+    transition: 2s;
+    opacity: 0;
+}
+.fadeIn02.animated {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
 /*アニメーションcss:下から上へ*/
 /* 上からフェードイン */
 .slide-top {

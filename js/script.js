@@ -43,7 +43,23 @@ $(window).on('load scroll', function (){
     });
 
 });
+// スクロールアニメーション：ふわっとフェードイン2
+$(window).on('load scroll', function (){
+    var box = $('.fadeIn02');
+    var animated = 'animated';
+    
+    box.each(function(){
+    
+    var boxOffset = $(this).offset().top;
+    var scrollPos = $(window).scrollTop();
+    var wh = $(window).height();
 
+    if(scrollPos > boxOffset - wh + 300 ){
+        $(this).addClass(animated);
+        }
+    });
+
+});
 
 // スクロールアニメーション：上下左右
 $(function(){
