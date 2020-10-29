@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* タブメニュー */
+.tab-menu {
+    display: flex;
+    margin: 0 -5px;
+  }
+  
+  .tab-menu__item {
+    box-sizing: border-box;
+    padding: 0 5px;
+  }
+  
+  
+  .tab-trigger { /* label */
+    background-color: #fff;
+    border: solid #c8887e 1px;
+    cursor: pointer;
+    color: #c8887e;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+  }
+  .tab-trigger.is-active {
+    background-color: #c8887e;
+    color: #fff;
+  }
+  
+  
+  /* タブコンテンツ */
+  .tab-content {
+    
+  }
+  .tab-content__item {
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: none;
+    max-width: 580px;
+    text-align: left;
+    width: 100%;
+  }
+  .tab-content__item.is-active {
+    display: block;
+    animation: fade 0.5s ease;
+  }
+  @keyframes fade {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  .tab-content-wrapper {
+    padding: 24px 0;
+  }
+  .tab-content-title {
+    color: #c8887e;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .tab-content-item {
+    border-bottom: 1px dotted rgba(0, 0, 0, .2);
+  }
+  .tab-content-item:first-child {
+    border-top: 1px dotted rgba(0, 0, 0, .2);
+  }
+  .tab-content-item-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 24px 8px;
+  }
+  .tab-content-item-thum {
+    max-width: 240px;
+    width: 100%;
+  }
+  .tab-content-item-textbox {
+    padding-left: 16px;
+  }
+  .tab-content-item-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .post-date {
+    display: inline-block;
+    font-size: 8px;
+    margin-right: 8px;
+    opacity: .7;
+  }
+  .post-date:before {
+    content: "\f274";
+}

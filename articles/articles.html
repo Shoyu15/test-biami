@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Article</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/text.css" rel="stylesheet" type="text/css">
+    <link href="../css/article.css" rel="stylesheet" type="text/css">
+    <link href="../css/articles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--平成フォント-->
+    <script>
+        (function(d) {
+        var config = {
+        kitId: 'uju1vqi',
+        scriptTimeout: 3000,
+        async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <!--ページ内スクロール-->
+    <script type="text/javascript" src="../js/smoothScroll.js"></script>
+
+    <!--グロナビ-->
+    <script>
+        $(function() {
+        $(".smp_menu_btn").on("click", function() {
+        $(".smp_menu_btn").toggleClass("active");
+        $(".smp_nav").fadeToggle();
+        });
+        });
+        </script>
+        <script type="text/javascript">
+        $(function(){
+        $(window).on('load resize', function(){
+        var headerHight = $("#header").outerHeight(); //ヘッダの高さ
+        $('#header dl dd ul li ul').css('top',headerHight);
+        });
+        });
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div id="header">
+        <dl>
+        <dt><img src="/images/common/logo.jpg" alt="logo"></dt>
+        <dd>
+        <div class="smp_menu_btn"><span></span></div><!--smp_menu_btn-->
+        <div class="smp_nav">
+        <ul class="block">
+        <li><a href="#">取引・導入実績について</a></li>
+        <li><a href="#">商品紹介</a>
+        <ul>
+        <li><a href="#">NS5000A/NS5000</a></li>
+        <li><a href="#">NB2500</a></li>
+        <li><a href="#">RS-05N</a></li>
+        <li><a href="#">シャワーオール</a></li>
+        </ul>
+        </li>
+        <li><a href="#">会社情報</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li class="smp tel"><a href="tel:000-0000-0000"><span class="ico"><img src="../images/common/tel_ico.png"></span>000-0000-0000</a></li>
+        </ul>
+        </div><!--smp_nav-->
+        </dd>
+        </dl>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!--main-->
+    <main class="content-wrapper main">
+        <div class="main-content">
+            <ul class="tab-menu">
+                <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger is-active" data-id="tab01">おすすめ記事</span></li>
+                <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab02">経営者向けコラム</span></li>
+                <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab03">介護のお悩みコラム</span></li>
+                <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab04">介護の助成金</span></li>
+            </ul><!-- .tab-menu -->
+            
+            <div class="tab-content">
+                <section class="tab-content__item js-tab-target is-active" id="tab01">
+                    <div class="tab-content-wrapper">
+                        <h2 class="tab-content-title">おすすめ記事一覧</h2>
+                        <ul class="tab-content-list">
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </section><!-- .tab-content__item -->
+                <section class="tab-content__item js-tab-target" id="tab02">
+                    <div class="tab-content-wrapper">
+                        <h2 class="tab-content-title">経営者向けのコラム</h2>
+                        <ul class="tab-content-list">
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </section><!-- .tab-content__item -->
+                <section class="tab-content__item js-tab-target" id="tab03">
+                    <div class="tab-content-wrapper">
+                        <h2 class="tab-content-title">介護のお悩みコラム</h2>
+                        <ul class="tab-content-list">
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </section><!-- .tab-content__item -->
+                <section class="tab-content__item js-tab-target" id="tab04">
+                    <div class="tab-content-wrapper">
+                        <h2 class="tab-content-title">介護の助成金</h2>
+                        <ul class="tab-content-list">
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="tab-content-item"><a href="">
+                                <div class="tab-content-item-inner">
+                                    <div class="tab-content-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <div class="tab-content-item-textbox">
+                                        <h4 class="tab-content-item-title">おすすめ記事</h4>
+                                        <p class="tab-content-item-date"><span class="post-date">2020年3月25日</span></p>
+                                        <p class="tab-content-item-meta">おすすめ記事メタディスクリプション</p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </section><!-- .tab-content__item -->
+            </div><!-- .tab-content -->
+        </div>
+        <!--//main-content-->
+        <!--sidebar-->
+        <div class="sidebar">
+            <div class="sidebar-innner">
+                <form action="/search-result/">
+                    <input id="search-input" placeholder="1つキーワードを入力" type="text" name="search-key">
+                    <input id="search-buttom" class="fas" type="submit" value="" method="get">
+                </form>
+                <section class="sidebar-content sidebar-recomend">
+                    <h3 class="sidebar-title">おすすめ記事</h3>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <div class="sidebar-item-inner">
+                                    <div class="sidebar-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <h4 class="sidebar-item-title">おすすめ記事1</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <div class="sidebar-item-inner">
+                                    <div class="sidebar-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <h4 class="sidebar-item-title">おすすめ記事2</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <div class="sidebar-item-inner">
+                                    <div class="sidebar-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <h4 class="sidebar-item-title">おすすめ記事3</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <div class="sidebar-item-inner">
+                                    <div class="sidebar-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <h4 class="sidebar-item-title">おすすめ記事4</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <div class="sidebar-item-inner">
+                                    <div class="sidebar-item-thum"><img src="/images/article/01-thumb.png" alt=""></div>
+                                    <h4 class="sidebar-item-title">おすすめ記事5</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="sidebar-content sidebar-category">
+                    <h3 class="sidebar-title">カテゴリー</h3>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item">
+                            <a href="">
+                                <h4 class="sidebar-category-title">介護施設を運営されている
+                                    経営者向けコラム</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">
+                                <h4 class="sidebar-category-title">介護に関するお悩み解決コラム</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">
+                                <h4 class="sidebar-category-title">介護の助成金について</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+        <!--sidebar-->
+    </main>
+    <!--//main-->
+
+    <!--footer-->
+    <footer>
+        <div id="footer">
+        <ul class="foot_nav01">
+        <li><a href="#" class="opa"><span>お問い合わせはこちら</span>CONTACT</a></li>
+        <li><a href="#" class="opa"><span>電話で問い合わせる</span>000-0000-0000</a></li>
+        </ul>
+        <ul class="foot_nav02">
+        <li><a href="#">コーポレートサイト</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">サイトマップ</a></li>
+        </ul>
+        </div>
+    </footer>
+    <!--footer-->
+
+    <script>
+        $(function(){
+    $('.js-tab-trigger').on('click', function (e) {
+        // すべてのタブメニューの'is-active'クラスを削除
+        $('.js-tab-trigger').removeClass('is-active');
+        // クリックしたタブメニューに'is-active'クラスを追加
+        $(this).addClass('is-active');
+
+        // ターゲットとなる要素（タブメニューdata属性値と等しいid値を持つコンテンツ要素[ターゲット要素]）を取得
+        let currentContent = $('#' + $(this).data('id'));
+
+        // タブコンテンツを非アクティブにする
+        $('.js-tab-target').removeClass('is-active');
+
+        // 対象コンテンツ(指定したIDの要素があったら)を表示させる
+        if (currentContent.length) {
+            currentContent.addClass('is-active');
+        }
+    });
+});
+    </script>
+
+</body>
+</html>
+
+
+

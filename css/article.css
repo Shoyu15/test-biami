@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* ----------------------- */
+/* base
+/* ----------------------- */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    color: #5c5c5c;
+}
+img,svg{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    opacity: .7;
+    transition: .3s;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+.section-wrapper{
+    padding: 60px 0;
+}
+.content-wrapper{
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.link-btn{
+    color: #fff;
+    background-color: #000;
+    width: 160px;
+    line-height: 36px;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.gray-bg{
+    background-color: #f2f2f2;
+}
+.lines{
+    line-height: 2;
+}
+.text-center {
+    text-align: center;
+}
+/* ----------------------- */
+/* main.cssの打ち消し
+/* ----------------------- */
+section {
+    padding:0;
+}
+/* ----------------------- */
+/* article
+/* ----------------------- */
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 16rem;/*ヘッダー分の高さをずらした*/
+}
+.main-content {
+    max-width: 700px;
+    padding: 0 4rem;
+}
+p {
+    line-height: 3.2rem;
+}
+.post-header {
+    margin-bottom: 4rem;
+}
+.entry-title {
+    color: #c8887e;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', Meiryo, serif;
+    margin-bottom: 2.4rem;
+}
+.post-date {
+    text-align: right;
+}
+.post-thumb {
+    margin-bottom: 4rem;
+}
+.post-lead {
+    margin-bottom: 4rem;
+}
+
+/*目次デザイン*/
+.post-toc {
+    margin-bottom: 4rem;
+}
+.post-toc-inner {
+    border: solid 1px #c8887e;
+    border-radius: 1.6rem;
+    box-sizing: border-box;
+}
+.post-toc-title {
+    background-color: #c8887e;
+    border-radius: 1.6rem 1.6rem 0 0;
+    color: #fff;
+    font-weight: bold;
+    padding: .8rem;
+    text-align: center;
+}
+.post-toc-content {
+    padding: 1.6rem;
+}
+.post-toc-item {
+    margin-top: 1.6rem;
+}
+.post-toc-item-h3 {
+    margin-left: 1.6rem;
+}
+.post-toc-item a{
+    font-weight: bold;
+}
+
+/*h2グループ*/
+.post-paragraph {
+    margin-bottom: 6.4rem;
+}
+.post-paragraph-title {
+    border-bottom: solid 1px #c8887e;
+    color: #c8887e;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', Meiryo, serif;
+    margin-bottom: 2.4rem;
+    padding-bottom: 1.6rem;
+}
+.post-paragraph-lead {
+    font-size: 1.6rem;
+    font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', Meiryo, serif;
+    margin-bottom: 2.4rem!important;/*main.cssを打ち消すため*/
+}
+
+/*h3グループ*/
+.post-group {
+    margin-bottom: 2.4rem;
+}
+.post-group-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    padding-left: 1.6rem;
+    position: relative;
+}
+.post-group-title:before {
+    border-radius: 3px;
+    background: #c8887e;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 6px;
+    height: 100%;
+}
+/*h4グループ*/
+.post-area-title {
+    background: linear-gradient(transparent 50%, #f2eae6 70%);
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+.post-area {
+    margin-bottom: 2.4rem;
+}
+
+/*boxデザイン*/
+.post-box {
+    border: solid 4px #f2eae6;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+.post-box-item:not(:first-child) {
+    margin-top: 16px;
+}
+
+/*表デザイン*/
+.post-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+.post-table td,.post-table th{
+    border-right: 1px solid #f2eae6;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.post-table td {
+    max-width: 180px;
+}
+.post-table tr {
+    background-color: #fff;
+    border: 1px solid #f2eae6;
+
+}
+.post-table thead tr{
+    background-color: #f2eae6;
+}
+
+/*sidebarデザイン*/
+.sidebar {
+    max-width: 360px;
+    width: 100%;
+}
+#form2 {
+    position:relative;
+    max-width:100%;	
+    margin-bottom:24px;
+    height: 10rem;
+}
+#sbox2 {
+    border: 1px solid #EFEBEF;
+    background-color: #F7F7F7;
+    border-radius: 100px;
+    color: #EFEBEF;
+    height:38px;
+    padding:0 10px; 
+    position:absolute; 
+    left:0;
+    top:0; 
+    outline:0;	
+    width: 260px;
+}
+#sbtn2 {
+    background:none;
+    border:none;
+    color:#EFEBEF;
+    font-size:16px;
+    height:38px;
+    position:absolute; 
+    right:100px;/*アイコン左右の位置調整*/
+    top:0;
+}
+#sbtn5:hover {
+    color:#7fbfff;
+}
+/*サイドバー コンテンツ*/
+.sidebar-content {
+    margin-bottom: 4rem;
+}
+/*おすすめ記事デザイン*/
+.sidebar-title {
+    background-color: #c8887e;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: .8rem 0;
+    text-align: center;
+}
+.sidebar-title:before {
+    font-family: FontAwesome;
+    padding-right: 8px;
+    content: "\f278";
+    padding-left: 10px;
+}
+.sidebar-item {
+    margin-top: 2.4rem;
+}
+.sidebar-item-inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0.8rem;
+}
+.sidebar-item-thum {
+    max-width: 16rem;
+    width: 100%;
+}
+
+
+
+/*# sourceMappingURL=article.css.map */

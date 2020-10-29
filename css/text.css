@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+/*フォント*/
+b,
+strong,
+.bold{
+font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI semibold", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+font-weight:bold;
+}
+.mincho{
+font-family: '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'メイリオ', Meiryo, serif;
+}
+.heisei{
+font-family: heisei-kaku-gothic-std, sans-serif;
+}
+.heisei_min{
+font-family: heisei-mincho-std, serif;
+}
+
+/*色*/
+.white{
+color:#fff;
+}
+.black{
+color:#5c5c5c;
+}
+.red{
+color:#c8887e;
+}
+.pink{
+color:#e2c3b9;
+}
+.pink2{
+color:#f2eae6;
+}
+.yellow{
+color:#ef9c12;
+}
+
+/*テキスト装飾*/
+.under_line{
+text-decoration:underline;
+}
+.line_through{
+text-decoration:line-through;
+}
+
+
