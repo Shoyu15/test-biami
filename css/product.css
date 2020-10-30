@@ -420,12 +420,83 @@ font-weight: bold;
 
 .featurePointinner {
     display: block;
-    padding-left: 3vw;
+    padding-left: 4vw;
     padding-right: 1em;
 }
 .featurePointinner-imgBlock01 {
     align-items: center;
     display: flex;
+    width: 80%;
+}
+.featurePointinner-imgBlock01.-product02{
+    width: 100%;
+    margin-left: auto;
+}
+.featurePoint-product02-box {
+    display: flex;
+}
+.featurePoint-product02-box .figureImg2-1 {
+    width: 50%;
+}
+.figureImg-leftbox, .figureImg-rightbox{
+    width: 44%;
+    margin: 0 auto;
+}
+.featurePointinner-imgBlock01.-product02 figure{
+    width: 50%;
+}
+.featurePointinner-imgBlock01.-product02 figure img{
+    max-height: 24vw;
+    width: auto;
+}
+.figureImg-product02-text {
+    align-items: center;
+    background-color: #D4B1A5;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    padding: .2em .2em 0;
+}
+.up-box {
+    border: #c8887e 1px solid;
+    padding: .6em;
+    margin-bottom: .6em;
+    max-height: 24vw;
+    width: 50%;
+}
+.up-box img {
+    margin:0 auto .6em;
+    width: 80%;
+    height: auto;
+}
+.up-box p{
+    display: inline-block;
+    font-size: 1vw;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .featurePointinner-imgBlock01.-product02 {
+        display: block;
+        width: 100%;
+    }
+    .figureImg-leftbox, .figureImg-rightbox{
+        width: 80%;
+        margin: 0 auto .6em;
+    }
+    .up-box img {
+        margin:0 auto .6em;
+        width: 40%;
+    }
+    .featurePointinner-imgBlock01.-product02 .figureImg {
+        left: auto!important;
+        min-width: auto;
+        margin-left: auto!important;
+    }
+}
+.featurePointinner-imgBlock01.-product04 figure{
+    max-width: 320px;
 }
 .featurePointinner figure {
 max-width: 198px;
@@ -477,6 +548,9 @@ padding-bottom: 35px;
 width: 50%;
 text-align: center;
 }
+.featureBlock2.-product01 p{
+    min-height: 10em;
+}
 .featureBlock3 p {
     text-align-last: left;
 }
@@ -510,8 +584,9 @@ height: auto;
 .featureBlock {
     display: flex;
     position: relative;
-    left: 125px;
-    margin-left: -125px;
+}
+.featureBlock.-product02 figure {
+    min-height: 200px;
 }
 
 .featureBlock__inner {
@@ -572,7 +647,7 @@ display: flex;
 }
 
 .up {
-    margin-top: -60px;
+    margin-top: 0px;
 }
 
 
@@ -633,6 +708,9 @@ font-size:3vw;
 
 .featureBlock2 {
 display: block;
+}
+.featureBlock2.-product01 p{
+    min-height: auto;
 }
     .featureBlock3 {
         width: 96%;
@@ -1194,6 +1272,7 @@ text-align: center;
 }
 .specificationBox-img {
     max-width: 40%;
+    width: 100%;
 }
 .specificationBox-img figure {
     width: 80%;
@@ -1207,8 +1286,9 @@ text-align: center;
     max-height: 200px;
     width: auto;
 }
-.specificationBox-img {
+.specificationBox-text {
     max-width: 60%;
+    width: 100%;
 }
 .specificationBox-table {
     font-size: 1.2vw;
